@@ -34,6 +34,7 @@
     "JUnit.Test1.executor": "Run",
     "JUnit.Test2 (1).executor": "Run",
     "JUnit.Test2.executor": "Run",
+    "JUnit.Test3 (1).executor": "Run",
     "JUnit.Test3.executor": "Run",
     "JUnit.Test4.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -49,18 +50,9 @@
       <recent name="C:\Users\Mahan\Documents\Java\AP-1402\Third-Assignment-RegEx\.github\workflows" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test2 (1)">
+  <component name="RunManager" selected="JUnit.Test4 (1)">
     <configuration name="Test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="First-Assignment-RegEx" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Third-Assignment-RegEx" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test1" />
       <option name="TEST_OBJECT" value="class" />
@@ -77,10 +69,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Third-Assignment-RegEx" />
+    <configuration name="Test3 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="First-Assignment-RegEx" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test3" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="First-Assignment-RegEx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test4" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test4 (1)" />
+        <item itemvalue="JUnit.Test3 (1)" />
         <item itemvalue="JUnit.Test2 (1)" />
         <item itemvalue="JUnit.Test1 (1)" />
         <item itemvalue="JUnit.Test4" />
-        <item itemvalue="JUnit.Test3" />
-        <item itemvalue="JUnit.Test1" />
       </list>
     </recent_temporary>
   </component>
