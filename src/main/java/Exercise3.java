@@ -58,8 +58,13 @@ public class Exercise3 {
 
     public static List<String> findReapetdWords(String input) {
         List<String> repeatedWords = new ArrayList<>();
+        String regex = "\\b((\\w+)\\2)\\b";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        while (matcher.find())
+            repeatedWords.add(matcher.group());
         return repeatedWords;
-        // TODO
+
     }
 
     public static void main(String[] args) {
