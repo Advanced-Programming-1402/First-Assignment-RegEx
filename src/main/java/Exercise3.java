@@ -11,9 +11,9 @@ public class Exercise3 {
     */
 
     public static String extractURL(String text) {
-        String regex = "write your regex pattern here!";  // TODO
+        String regex = "http(s)?://(www.)?[A-Z0-9-_+&*]*\\.[A-Z0-9]*(\\.[A-Z0-9]*)*";
 
-        Pattern pattern = Pattern.compile(regex);
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(text);
 
         if (matcher.find()) {
@@ -29,8 +29,10 @@ public class Exercise3 {
      */
 
     public static boolean validateEmail(String email) {
-        // TODO
-        return false;
+        String regex = "^[A-Z0-9-_+&*]*@[A-Z0-9-_+&*]*\\.[A-Z0-9-_+&*]*$";
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.find();
     }
 
     /*
@@ -39,8 +41,13 @@ public class Exercise3 {
 
     public static List<String> findWordsWithRepeatLetters(String input) {
         List<String> wordsWithRepeatLetters = new ArrayList<>();
+        String regex = "\\b[a-z]*([a-z])([a-z])*\\1[a-z]*\\b";
+        Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(input);
+        while (matcher.find()) {
+            wordsWithRepeatLetters.add(matcher.group());
+        }
         return wordsWithRepeatLetters;
-        // TODO
     }
 
     /*
