@@ -11,7 +11,7 @@ public class Exercise3 {
     */
 
     public static String extractURL(String text) {
-        String regex = "write your regex pattern here!";  // TODO
+        String regex = "\\b((?:https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|])";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
@@ -30,7 +30,17 @@ public class Exercise3 {
 
     public static boolean validateEmail(String email) {
         // TODO
-        return false;
+        String regex =  "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(email);
+
+        if (matcher.find()) {
+            return valid;
+        }
+        else {
+            return unvalid
+        }
     }
 
     /*
