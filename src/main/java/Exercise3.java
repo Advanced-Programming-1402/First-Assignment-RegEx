@@ -49,7 +49,6 @@ public class Exercise3 {
         }
         return wordsWithRepeatLetters;
     }
-
     /*
     Bonus Problem ;)
     implement the method below so that it returns a list of words that are repeated twice accidentally in a string
